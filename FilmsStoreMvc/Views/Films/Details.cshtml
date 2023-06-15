@@ -1,0 +1,61 @@
+﻿@model FilmsStoreMvc.Models.Domain.Film
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Film</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Duree)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Duree)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Studio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Studio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CritiqueScore)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CritiqueScore)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AudienceScore)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AudienceScore)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Directeur)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Directeur)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActeurPrincipal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActeurPrincipal)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
